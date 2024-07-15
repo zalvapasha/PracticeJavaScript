@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Booleans</title>
+  </head>
+  <body>
+    <script>
+      true;
+      false;
+
+      console.log(3 > 5 - 5);
+
+      console.log(5 === "5.00");
+
+      if (true) {
+        console.log("hello");
+      } else {
+        console.log("bye");
+      }
+
+      const age = 15;
+      if (age >= 16) {
+        console.log("you can drive");
+      } else if (age >= 14) {
+        console.log("almost there!");
+      } else {
+        console.log("you can not drive");
+      }
+
+      //ternary operator
+      false ? "truthy" : "falsy";
+
+      //guard operator
+      false && "truthy";
+      const message = 5 && "truthy";
+      console.log(message);
+
+      //default operator
+      const currency = "EUR" || "USD";
+      console.log(currency);
+    </script>
+  </body>
+</html>

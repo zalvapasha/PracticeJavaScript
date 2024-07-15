@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div style="display: flex; gap: 8px">
+      <div
+        style="
+          background-color: yellow;
+          border: 2px solid black;
+          padding: 4px;
+          width: fit-content;
+        "
+      >
+        <p>Coffee</p>
+        <button onclick="coffeeQuantity += 1">+1</button>
+        <button onclick="coffeeQuantity -= 1">-1</button>
+      </div>
+
+      <div
+        style="
+          background-color: yellow;
+          border: 2px solid black;
+          padding: 4px;
+          width: fit-content;
+        "
+      >
+        <p>Bagel</p>
+        <button onclick="bagelQuantity += 1">+1</button>
+        <button onclick="bagelQuantity -= 1">-1</button>
+      </div>
+
+      <div
+        style="
+          background-color: yellow;
+          border: 2px solid black;
+          padding: 4px;
+          width: fit-content;
+        "
+      >
+        <p>Soup</p>
+        <button onclick="soupQuantity += 1">+1</button>
+        <button onclick="soupQuantity -= 1">-1</button>
+      </div>
+    </div>
+
+    <br />
+    <button
+      onclick="
+        const coffeeTotal = coffeeQuantity * costCoffee;
+        const bagelTotal = bagelQuantity * costBagel;
+        const soupTotal = soupQuantity * costSoup;
+        console.log(`My Cart\nCoffee(${coffeeQuantity}) - $${coffeeTotal}\nBagel(${bagelQuantity}) - $${bagelTotal}\nSoup(${soupQuantity}) - $${soupTotal}`);
+      "
+    >
+      Show Cart
+    </button>
+
+    <script>
+      let name = "Zalva";
+      console.log(`My name is ${name}`);
+
+      const costCoffee = 5;
+      let coffeeQuantity = 0;
+      const costBagel = 3;
+      let bagelQuantity = 0;
+      const costSoup = 9;
+      let soupQuantity = 0;
+    </script>
+  </body>
+</html>
